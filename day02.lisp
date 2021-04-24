@@ -10,6 +10,7 @@
 
 
 
+(defun part1 ()
 (print (count-if #'(lambda (rule-and-password)
 			  (let ((min (parse-integer (first rule-and-password)))
 					(max (parse-integer (second rule-and-password)))
@@ -18,4 +19,4 @@
 				(flet ((in-range (n)
 						 (and (<= n max) (<= min n))))
 				  (in-range (count-if #'(lambda (c) (char= c key)) password)))))
-			  (mapcar #'parse-rule-and-password +rules-and-passwords+)))
+			  (mapcar #'parse-rule-and-password +rules-and-passwords+))))
