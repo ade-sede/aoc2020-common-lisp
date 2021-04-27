@@ -4,7 +4,7 @@
 ;; TODO
 ;; Remove duplication in valid1 and valid2 when defining variables
 ;; Maybe try to write a more idiomatic version, less defun and more flet
-;; Try to do this without using automatical regexes coming from nowhere ?
+;; Try to do this without using automagical regexes coming from nowhere ?
 
 (defvar +rules-and-passwords+ (uiop:read-file-lines "02.input"))
 
